@@ -6,13 +6,14 @@
 '''
 
 
-#---------------------intro---------------------------------
-print("Welcome to Y11 Fitness Trcker!")
-name = str(input("Enter your name: "))
-age = int(input("Enter your age: "))
+
 
 
 #-----------------function-----------------------------------
+#------------------------------------
+#This function is for check how many
+#they can do and how strong they are
+#------------------------------------
 def fitness():
     count_push_up = 0
     for i in range(1,8):
@@ -35,10 +36,13 @@ def fitness():
                 break
                 
             except:
-                print("Error, please enter with a number")
-                  
+                print("Error, please enter with a number")                  
                 
 
+
+#---------------------main routine---------------------------
+print("Welcome to Y11 Fitness Trcker!")  #greeting!!
+name = str(input("Enter your name: "))
+age = int(input("Enter your age: "))
+
 fitness()
-
-
