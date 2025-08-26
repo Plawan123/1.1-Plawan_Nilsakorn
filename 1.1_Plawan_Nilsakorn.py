@@ -4,8 +4,7 @@
     version: 1
     description: 1.1 assesment - Fitness Tracker
 '''
-
-
+    
 
 
 
@@ -14,3 +13,5 @@
 print("Welcome to Y11 Fitness Trcker!")
 name = str(input("Enter your name: "))
 age = int(input("Enter your age: "))
+store = int(input("Push up"
+                 "Pull up"))
