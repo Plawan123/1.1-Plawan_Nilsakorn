@@ -15,7 +15,6 @@
 #------------------------------------
 def fitness():
     total = 0  # Set total push up of whole week to 0
-    total_2()
     count_push_up = 0 # Set push up in each day to 0
     each_day = []  # List that will store how many push up doing in a day
     each_day.append(count_push_up)
@@ -24,7 +23,7 @@ def fitness():
             try:  
                 count_push_up = int(input("How many push up have you done toady: "))
                 if(count_push_up >= 80):
-                    print("Nice you are very strong keep workinghard!")
+                    print("Nice you are very strong keep working hard!")
                 elif(count_push_up >= 50):
                     print("You are strong keep working hard!")
                 elif(count_push_up >= 30):
@@ -37,14 +36,13 @@ def fitness():
                     print("Are you kidding me?")
                      
                 total += count_push_up  # Add all amount of push up that store in list together to get a total push up       
-                total_2 = max   
 
                 break
                 
             except:  # If user enter alphabet it will print this
                 print("Error, please enter with a number")                  
     
-    print(f"Nice {name} you did {total} push up for this week {total_2}")
+    print(f"Nice {name} you did {total} push up for this week")
 
 
 #---------------------main routine---------------------------
