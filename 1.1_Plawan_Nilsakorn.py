@@ -22,11 +22,8 @@ def fitness():
     each_day = []  # List that will store how many push up doing in a day
 
     for count_push_up in range(1,8):  # If the input not error the loop will go for 8 times
-        while True:  # Check how many push up been doing
-
-            # This is to make sure that the code won't be crash if user input a alphabet etc
-            # Give user a feed back of how strong they are from many push they do
-            try:  
+        while True: # Check how many push up been doing
+            try:  # This is to make sure that the code won't be crash if user input a alphabet etc  Give user a feed back of how strong they are from many push they do
                 count_push_up = int(input("How many push up have you done toady: "))
                 if(count_push_up >= 80):
                     print("Nice you are very strong keep working hard!")
@@ -39,13 +36,16 @@ def fitness():
                 elif(count_push_up <= 9 and count_push_up >0):
                     print("Come on you can do better than this!")
 
+
                 else:  # If enter any other thing else that is a number and lower than 0 
                     print("Are you kidding me?")  
+
+                    break  # Stop loop if no error or negative number
 
                 each_day.append(count_push_up)     
                 total += count_push_up  # Add all amount of push up that store in list together to get a total push up       
 
-                break  # Stop loop if no error
+    
                 
             except:  # If user enter alphabet it will print this
                 print("Error, please enter with a number")  
